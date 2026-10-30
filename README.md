@@ -1,5 +1,7 @@
 # Smart C Lab website
 
+**Live site:** https://smartclab.netlify.app/
+
 The public website for **Smart C Lab**, a student research lab in Nashville, TN working on drone and UAV security, wireless protocol analysis, zero trust architecture, AI defense, and cybersecurity education.
 
 Designed by Tioluwanimofe Adesanya (Lead Researcher, UAV Security & Cyber Education).
@@ -45,7 +47,7 @@ python3 -m http.server 8000
 
 Drop the folder on any static host. Because it's a single-page app, configure the host to rewrite unknown paths to `index.html`:
 
-- **Netlify:** add a `_redirects` file containing `/*  /index.html  200`
+- **Netlify:** this is how the live site at [smartclab.netlify.app](https://smartclab.netlify.app/) is hosted. For a new deploy, add a `_redirects` file containing `/*  /index.html  200`
 - **Vercel:** add a rewrite from `/(.*)` to `/index.html`
 - **GitHub Pages:** works at a custom domain or `<user>.github.io` root; copy `index.html` to `404.html` so deep links load
 
